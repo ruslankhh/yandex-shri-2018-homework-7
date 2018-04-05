@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "description": "Домашнее задание #7 в ШРИ Яндекса 2018.",
   "scripts": {
-    "start": "PORT=8080 serve dist"
+    "start": "PORT=8080 serve dist",
+    "audit": "source ./bin/update_report.sh && npm run lighthouse",
+    "report": "open ./reports/index.html",
+    "lighthouse": "lighthouse --config-path=lighthouse.config.js https://lifehacker.ru --output-path=$PWD/reports/$DATE/lifehacker.ru_$DATE.html --save-assets --view"
   },
   "repository": {
     "type": "git",
@@ -12,6 +15,7 @@
   "keywords": [],
   "author": "",
   "devDependencies": {
+    "lighthouse": "^2.9.4",
     "serve": "^6.5.3"
   }
 }
