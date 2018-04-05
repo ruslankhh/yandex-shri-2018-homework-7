@@ -5,12 +5,9 @@
   "scripts": {
     "start": "open ./reports/index.html",
     "deploy": "gh-pages -d reports",
-    "audit": "npm run audit-mobile && npm run audit-desktop",
-    "audit-mobile": "source ./bin/update_report_mobile.sh && npm run lighthouse-mobile",
-    "audit-desktop": "source ./bin/update_report_desktop.sh && npm run lighthouse-desktop",
-    "lighthouse-mobile": "lighthouse -n --config-path=lighthouse.config.js https://lifehacker.ru --output-path=$PWD/reports/$DATE-mobile-lifehacker.ru.html --view",
-    "lighthouse-desktop": "lighthouse -n --config-path=lighthouse.config.js https://lifehacker.ru --output-path=$PWD/reports/$DATE-desktop-lifehacker.ru.html --disable-device-emulation --disable-network-throttling --view",
-    "pagespeed": "bash ./bin/run_psi.sh"
+    "audit": "npm run lighthouse && npm run pagespeed",
+    "lighthouse": "bash ./bin/run_lighthouse.sh",
+    "pagespeed": "bash ./bin/run_pagespeed.sh"
   },
   "repository": {
     "type": "git",
