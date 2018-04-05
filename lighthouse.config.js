@@ -6,7 +6,6 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lifehacker.ru',
   extends: 'lighthouse:default',
   settings: {
     onlyCategories: ['performance']
