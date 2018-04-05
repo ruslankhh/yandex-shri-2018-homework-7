@@ -37,25 +37,27 @@ npm run audit
 
 ### Отчёт
 
-#### Lighthouse Mobile
+#### Lighthouse Performance Mobile
 
-- Представление (Performance): **6**
+Общая оценка: **6/100**.
+
 - Первая отрисовка (First Paint): **неизвестно**
 - Первая значимая отрисовка (First Meaningful Paint): **6 870 мс**
 - Первая интерактивность (First Interactive): **34 910 мс**
-- Последующая интерактивность (Consistently Interactive): **слишком долго**
+- Последовательная интерактивность (Consistently Interactive): **слишком долго**
 - Индекс перцептивной скорости (Perceptual Speed Index): **15 655**
-- Предполагаемая временная задержка ввода (Estimated Input Latency): **401 мс**
+- Предполагаемое время задержки ввода (Estimated Input Latency): **401 мс**
 
-#### Lighthouse Desktop
+#### Lighthouse Performance Desktop
 
-- Представление (Performance): **22**
+Общая оценка: **22/100**.
+
 - Первая отрисовка (First Paint): **неизвестно**
 - Первая значимая отрисовка (First Meaningful Paint): **4 040 мс**
 - Первая интерактивность (First Interactive): **25 580 мс**
-- Последующая интерактивность (Consistently Interactive): **25 580 мс**
+- Последовательная интерактивность (Consistently Interactive): **25 580 мс**
 - Индекс перцептивной скорости (Perceptual Speed Index): **25 898**
-- Предполагаемая временная задержка ввода (Estimated Input Latency): **384 мс**
+- Предполагаемое время задержки ввода (Estimated Input Latency): **384 мс**
 
 #### PageSpeed Insights Mobile
 
