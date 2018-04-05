@@ -4,6 +4,7 @@
   "description": "Домашнее задание #7 в ШРИ Яндекса 2018.",
   "scripts": {
     "start": "open ./reports/index.html",
+    "deploy": "gh-pages -d reports",
     "audit": "npm run audit-mobile && npm run audit-desktop",
     "audit-mobile": "source ./bin/update_report_mobile.sh && npm run lighthouse-mobile",
     "audit-desktop": "source ./bin/update_report_desktop.sh && npm run lighthouse-desktop",
@@ -17,6 +18,7 @@
   "keywords": [],
   "author": "",
   "devDependencies": {
+    "gh-pages": "^1.1.0",
     "lighthouse": "^2.9.4"
   }
 }
