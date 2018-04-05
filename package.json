@@ -3,13 +3,12 @@
   "version": "0.0.0",
   "description": "Домашнее задание #7 в ШРИ Яндекса 2018.",
   "scripts": {
-    "start": "PORT=8080 serve dist",
+    "start": "open ./reports/index.html",
     "audit": "npm run audit-mobile && npm run audit-desktop",
-    "report": "open ./reports/index.html",
     "audit-mobile": "source ./bin/update_report_mobile.sh && npm run lighthouse-mobile",
     "audit-desktop": "source ./bin/update_report_desktop.sh && npm run lighthouse-desktop",
-    "lighthouse-mobile": "lighthouse --config-path=lighthouse.config.js https://lifehacker.ru --output-path=$PWD/reports/$DATE-mobile/lifehacker.ru-mobile_$DATE.html --save-assets --view",
-    "lighthouse-desktop": "lighthouse --config-path=lighthouse.config.js https://lifehacker.ru --output-path=$PWD/reports/$DATE-desktop/lifehacker.ru-desktop_$DATE.html --save-assets --disable-device-emulation --disable-network-throttling --view"
+    "lighthouse-mobile": "lighthouse -n --config-path=lighthouse.config.js https://lifehacker.ru --output-path=$PWD/reports/$DATE-mobile/$DATE-mobile-lifehacker.ru.html --save-assets --view",
+    "lighthouse-desktop": "lighthouse -n --config-path=lighthouse.config.js https://lifehacker.ru --output-path=$PWD/reports/$DATE-desktop/$DATE-desktop-lifehacker.ru.html --save-assets --disable-device-emulation --disable-network-throttling --view"
   },
   "repository": {
     "type": "git",
@@ -18,7 +17,6 @@
   "keywords": [],
   "author": "",
   "devDependencies": {
-    "lighthouse": "^2.9.4",
-    "serve": "^6.5.3"
+    "lighthouse": "^2.9.4"
   }
 }
