@@ -4,7 +4,7 @@
 
 ## Задание
 
-![Лайфхакер](reports/screenshot-lifehacker.ru.png)
+![Лайфхакер](reports/screenshot.png)
 
 Найти проблемы со скоростью загрузки сайта [Лайфхакер](https://lifehacker.ru) и предложить способы их решения.
 
