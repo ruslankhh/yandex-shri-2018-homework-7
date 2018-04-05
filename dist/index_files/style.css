@@ -1,0 +1,541 @@
+.widget.widget_lh_slides {
+    /*padding-bottom: 30px;*/
+}
+
+.soc-div * {
+    font-family: Roboto, sans-serif;
+}
+.soc-div {
+    display: none;
+    width: 300px;
+    padding: 15px 0;
+    overflow: hidden;
+}
+.social-root {
+    width: 100%;
+}
+
+.social-root * {
+    margin: 0;
+    padding: 0;
+}
+
+.widget_lh_slides.widget_fixed {
+    width:100%;
+}
+
+.social-root .soc {
+    max-width: 100%;
+    height: 178px;
+    margin: 0 auto;
+}
+
+.social-root .soc.soc-facebook {
+    background-color: #497FC9;
+}
+
+.social-root .soc.soc-twitter {
+    background-color: #72B6E7;
+}
+
+.social-root .soc.soc-youtube {
+    background-color: #EF524D;
+}
+
+.social-root .soc p {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 27px 20px 20px;
+}
+
+.social-root .soc .soc-wrapper {
+    text-align: center;
+    width: 200px;
+    height: 60px;
+    background-color: white;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 9px;
+}
+
+.social-root .soc-youtube .soc-wrapper {
+    display: block;
+    padding-top: 19px;
+}
+
+
+.mailchimp-wrapper {
+    margin: 0 auto;
+    background-color: #eee;
+    position: relative;
+    padding:15px;
+}
+.mailchimp-wrapper .promo {
+  display: none;
+  padding:10px 10px 0;
+}
+.mailchimp-wrapper .promo-text {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.mailchimp-wrapper .promo-logo {
+  margin-top:10px;
+  width: 120px;
+  height: 45px;
+  background: url('../img/yandex-taxi-color.svg') center center no-repeat;
+  background-size: 120px 45px;
+}
+.mailchimp-wrapper .subscribe-on {
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  font-weight:600;
+  margin-bottom:10px;
+}
+
+.mailchimp-wrapper .input-wrapper input[type="email"] {
+   display: block;
+   width: 100%;
+   padding: 10px;
+   outline: none;
+   font-size: 14px;
+   border: solid 1px #aaa;
+}
+.mailchimp-wrapper .input-wrapper input[type="submit"] {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   right: 0;;
+   display: block;
+   width: 20%;
+   outline: none;
+   text-align: center;
+   border: 0;
+   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuOWwzfk4AAAFUSURBVFhHxdbfR2RxHIfxSb9TNi27kiRWZElELMv+r0vsxV4sXUQXEalkU3ZvIkkkKUmp69PzYeZizDPnfM8M3z68bp55M8eYi9MoiuJdacxJY04ac9KYk8YKA032WW0aS8QXn+AfZputLxpLxAOcIu4c87BdMo0VPqH1EJdYhO2SaEwwgyPEXWMJtqukMdEH7CHuFl9hu1Iaa5jEDuLusQrbdaWxpnFsIe4R67Cd0tiDUfxB3DO+w3YdNPZoGL8Q94ofsF0bjX0YxE/EHcI2bTT2YQgbiNuHbdpo7NEIfiPuBUn/A409GMMm4p7wDbbroLGmCWwj7gFrsJ3SWMMUdhF3hxXYriuNiaZxgLgbLMN2pTQm+IhjxF3hC2xXSWOFz/iPuAsswHZJNJaIF5LWl59hDrZLprFEPEC8B/xF/BK2qUVjThpz0piTxpw05qQxn6LxBp8mKv5DdtbXAAAAAElFTkSuQmCC);
+   background-color: #ed5d3b;
+   background-repeat: no-repeat;
+   background-position:center center;
+   background-size: 20px 20px;
+   font-size: 24px;
+   line-height:16px;
+   text-indent:-9999em;
+}
+.mailchimp-wrapper .input-wrapper input[type="submit"]:hover {
+   background-color:#C92931;
+}
+
+
+.mailchimp-wrapper .input-wrapper > div {
+   position: relative;
+}
+
+.mailchimp-wrapper .input-wrapper,
+.mailchimp-wrapper .groups > div {
+   padding: 10px;
+   text-align: left;
+}
+.mailchimp-wrapper .groups label {
+  font-size:14px;
+}
+.mailchimp-wrapper [type="checkbox"]:not(:checked),
+.mailchimp-wrapper [type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+
+.mailchimp-wrapper [type="checkbox"]:not(:checked) + label,
+.mailchimp-wrapper [type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 37px;
+    cursor: pointer;
+}
+
+.mailchimp-wrapper [type="checkbox"]:not(:checked) + label:before,
+.mailchimp-wrapper [type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left:0; top:-2px;
+    width: 24px; height: 24px;
+    border: 1px solid #aaa;
+    background: #f8f8f8;
+    border-radius: 0;
+}
+
+.mailchimp-wrapper [type="checkbox"]:not(:checked) + label:after,
+.mailchimp-wrapper [type="checkbox"]:checked + label:after {
+    content: "\2713";
+    position: absolute;
+    top: 3px; left: 6px;
+    font-size: 18px;
+    line-height: 0.8;
+    color: #eb5e42;
+    transition: all .2s;
+}
+
+.mailchimp-wrapper [type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+
+.mailchimp-wrapper [type="checkbox"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.mailchimp-wrapper [type="checkbox"]:disabled:not(:checked) + label:before,
+.mailchimp-wrapper [type="checkbox"]:disabled:checked + label:before {
+    box-shadow: none;
+    border-color: #bbb;
+    background-color: #ddd;
+}
+
+.mailchimp-wrapper [type="checkbox"]:disabled:checked + label:after {
+    color: #999;
+}
+
+.mailchimp-wrapper [type="checkbox"]:disabled + label {
+    color: #aaa;
+}
+
+.ios-app-wrapper {
+    font-family: Roboto, sans-serif;
+    width: 100%;
+    border: 1px solid #666;
+    height: 190px;
+}
+.ios-app-wrapper img:hover {
+    opacity: 0.7;
+}
+.ios-app-wrapper .ios-left {
+    width: 58%;
+    float: left;
+    height: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.ios-app-wrapper .ios-right {
+    width: 42%;
+    float: left;
+    height: 100%;
+    position: relative;
+}
+.ios-app-wrapper .ios-right img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.ios-app-wrapper .best-method {
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    margin: 0;
+}
+.ios-app-wrapper .read-lh {
+    font-style: italic;
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+    padding: 0 20px;
+}
+.ios-app-wrapper .img-block {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+.ios-app-wrapper .img-block img {
+    width: 120px;
+}
+
+@media (max-width: 1023px) {
+    .ios-app-wrapper {
+        height: 210px;
+    }
+}
+@media (max-width: 710px) {
+    .ios-app-wrapper .ios-right {
+        display: none;
+    }
+    .ios-app-wrapper .ios-left {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .ios-app-wrapper .ios-left {
+        width: 100%;
+    }
+    .ios-app-wrapper .ios-right {
+        display: none;
+    }
+}
+
+
+
+
+/*links on vk, fb and twitter social groups*/
+.socials.lh-social-slider {
+    background-color: #3A5A99;
+    background-image: url(../img/socials/bg.svg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    min-height: 114px;
+    width: 100%;
+    margin-bottom: 30px;
+    float:right;
+}
+.socials.lh-social-slider .socials-inner {
+    max-width: 540px;
+    min-height: inherit;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.socials .socials-left,
+.socials .socials-right {
+    padding: 10px 20px;
+    margin: 0 auto;
+}
+.socials .socials-left {
+    max-width: 220px;
+}
+.socials .socials-right {
+    width: 300px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.socials .socials-title {
+    color: white;
+    font: 400 24px/26px Roboto;
+}
+.socials .socials-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #2c4474;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+}
+.socials .socials-icon:hover {
+    transition: all 300ms;
+    background-color: #132B5B;
+}
+.socials .socials-icon-wrapper {
+    width: 80px;
+    display: block;
+    text-decoration: none;
+}
+.socials .socials-icon-wrapper:hover {
+    text-decoration: none;
+}
+.socials .socials-right-title {
+    text-align: center;
+    font-size: 10px;
+    line-height: 1.4;
+    color: white;
+}
+.socials .socials-icon.fb {
+    background-image: url(../img/socials/f.svg);
+    background-size: 20px;
+}
+.socials .socials-icon.vk {
+    background-image: url(../img/socials/vk.svg);
+    background-size: 34px;
+}
+.socials .socials-icon.tw {
+    background-image: url(../img/socials/tw.svg);
+    background-size: 32px;
+}
+.widget-area .socials-title {
+ text-align: center;
+}
+.widget-area .socials.lh-social-slider {
+ float: none;
+ margin: 0 auto;
+}
+
+
+@media(max-width: 500px) {
+    .socials .socials-title {
+        text-align: center;
+    }
+}
+
+
+/* TELEGRAM */
+
+.lh-ss__telegram {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 336px;
+    height: 240px;
+    background-image: url(../img/telegram/bg.svg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    border: 5px solid #1e96c8;
+    display: block;
+    margin: 0 auto;
+}
+
+.lh-ss__telegram .icon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 20px;
+    left: 50%;
+    margin-left: -50px;
+    background-image: url(../img/telegram/icon.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 300ms;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.lh-ss__telegram .read-lh {
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 300;
+    text-align: center;
+    color: #1e96c8;
+    padding-top: 128px;
+    padding-bottom: 12px;
+}
+
+.lh-ss__telegram .button {
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    background-color: #1e96c8;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+}
+.lh-ss__telegram .button:hover {
+    background-color: #057DAF;
+    transition: all 300ms ease-out;
+}
+
+.lh-ss__telegram:hover .icon {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+/* VIBER */
+
+.lh-ss__viber {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 336px;
+    height: 240px;
+    background-image: url(../img/viber/bg.svg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    border: 5px solid #7e549f;
+    display: block;
+    margin: 0 auto;
+}
+
+.lh-ss__viber .icon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 20px;
+    left: 50%;
+    margin-left: -50px;
+    background-image: url(../img/viber/icon.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 300ms;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.lh-ss__viber .read-lh {
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 300;
+    text-align: center;
+    color: #7e549f;
+    padding-top: 128px;
+    padding-bottom: 12px;
+}
+
+.lh-ss__viber .button {
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    background-color: #7e549f;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+}
+
+.lh-ss__viber .button:hover {
+    background-color: #653B86;
+    transition: all 300ms ease-out;
+}
+
+.lh-ss__viber:hover .icon {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.social-root iframe[id^=twitter-widget] {
+    width: 85px !important;
+}
