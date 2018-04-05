@@ -14,13 +14,13 @@
 $ npm i
 ```
 
-Посмотреть архив отчётов:
+Посмотреть архив отчётов (только lighthouse, psi — выводится в cli):
 
 ```bash
 npm start
 ```
 
-Провести аудит оригинального сайта:
+Провести аудит сайта:
 
 ```bash
 npm run audit
@@ -30,5 +30,7 @@ npm run audit
 
 - Сохранил страницу в репозиторий для истории, весь аудит проводился на реальном сайте.
 - Добавил `<meta name="robots" content="noindex">` в сохранённый сайт.
-- Для аудита использовал утилиту [lighthouse](https://github.com/GoogleChrome/lighthouse).
+- Для аудита использовал:
+  - [lighthouse](https://github.com/GoogleChrome/lighthouse)
+  - [psi](https://github.com/addyosmani/psi)
 - Сгенерировал несколько отчетов.
