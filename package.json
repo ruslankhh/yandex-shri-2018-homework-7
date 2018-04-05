@@ -1,0 +1,17 @@
+{
+  "name": "yandex-shri-2018-homework-7",
+  "version": "0.0.0",
+  "description": "Домашнее задание #7 в ШРИ Яндекса 2018.",
+  "scripts": {
+    "start": "PORT=8080 serve dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruslankhh/yandex-shri-2018-homework-7.git"
+  },
+  "keywords": [],
+  "author": "",
+  "devDependencies": {
+    "serve": "^6.5.3"
+  }
+}
