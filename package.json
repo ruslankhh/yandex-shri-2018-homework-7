@@ -7,8 +7,8 @@
     "audit": "npm run audit-mobile && npm run audit-desktop",
     "audit-mobile": "source ./bin/update_report_mobile.sh && npm run lighthouse-mobile",
     "audit-desktop": "source ./bin/update_report_desktop.sh && npm run lighthouse-desktop",
-    "lighthouse-mobile": "lighthouse -n --config-path=lighthouse.config.js https://lifehacker.ru --output-path=$PWD/reports/$DATE-mobile/$DATE-mobile-lifehacker.ru.html --save-assets --view",
-    "lighthouse-desktop": "lighthouse -n --config-path=lighthouse.config.js https://lifehacker.ru --output-path=$PWD/reports/$DATE-desktop/$DATE-desktop-lifehacker.ru.html --save-assets --disable-device-emulation --disable-network-throttling --view"
+    "lighthouse-mobile": "lighthouse -n --config-path=lighthouse.config.js https://lifehacker.ru --output-path=$PWD/reports/$DATE-mobile-lifehacker.ru.html --view",
+    "lighthouse-desktop": "lighthouse -n --config-path=lighthouse.config.js https://lifehacker.ru --output-path=$PWD/reports/$DATE-desktop-lifehacker.ru.html --disable-device-emulation --disable-network-throttling --view"
   },
   "repository": {
     "type": "git",
