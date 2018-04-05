@@ -4,9 +4,12 @@
   "description": "Домашнее задание #7 в ШРИ Яндекса 2018.",
   "scripts": {
     "start": "PORT=8080 serve dist",
-    "audit": "source ./bin/update_report.sh && npm run lighthouse",
+    "audit": "npm run audit-mobile && npm run audit-desktop",
     "report": "open ./reports/index.html",
-    "lighthouse": "lighthouse --config-path=lighthouse.config.js https://lifehacker.ru --output-path=$PWD/reports/$DATE/lifehacker.ru_$DATE.html --save-assets --view"
+    "audit-mobile": "source ./bin/update_report_mobile.sh && npm run lighthouse-mobile",
+    "audit-desktop": "source ./bin/update_report_desktop.sh && npm run lighthouse-desktop",
+    "lighthouse-mobile": "lighthouse --config-path=lighthouse.config.js https://lifehacker.ru --output-path=$PWD/reports/$DATE-mobile/lifehacker.ru-mobile_$DATE.html --save-assets --view",
+    "lighthouse-desktop": "lighthouse --config-path=lighthouse.config.js https://lifehacker.ru --output-path=$PWD/reports/$DATE-desktop/lifehacker.ru-desktop_$DATE.html --save-assets --disable-device-emulation --disable-network-throttling --view"
   },
   "repository": {
     "type": "git",
